@@ -1,11 +1,8 @@
 body {
   background-color: #f7f7f7;
-  font-family:"Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-};
+  font-family: "Outfit", sans-serif;
 }
+
 h1 {
   text-align: center;
   font-weight: 700px;
@@ -13,7 +10,60 @@ h1 {
   line-height: 1.5;
   color: #393830;
 }
+
+header {
+  margin-bottom: 40px;
+}
+
+form {
+  padding: 40px;
+  margin-bottom: 30px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  display: flex;
+}
+
+a {
+  color: #8fd6e7;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 28px;
+}
+
 .container {
   margin: 100px auto;
   max-width: 600px;
+}
+
+.search-button {
+  padding: 15px;
+  border: 1px solid rgb(173, 171, 161);
+  width: 80%;
+  font-size: 15px;
+  border-radius: 50px;
+  line-height: 18px;
+  color: rgb(173, 171, 161);
+}
+
+.submit-button {
+  margin-left: 10px;
+  background-color: #8fd6e7;
+  border: none;
+  color: #f7f7f7;
+  border-radius: 50px;
+  padding: 15px 20px;
+  width: 145px;
+  font-size: 15px;
+}
+
+.insert-quote {
+  font-size: 15px;
+  background-color: #f7f7f7;
+  padding: 18px;
+  line-height: 2;
+  border-left: 3px solid rgb(173, 171, 161);
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 }
