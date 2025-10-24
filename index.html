@@ -20,19 +20,22 @@
         <h1>AI Film Quote Generator</h1>
       </header>
       <main>
-        <form id="film-quote-form">
-          <input
-            type="text"
-            placeholder="Enter film choice"
-            autofocus
-            required
-            autocomplete="off"
-            class="search-button"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="insert-quote" id="film-quote-actual"></div>
+        <div class="form-container">
+          <form id="film-quote-form">
+            <input
+              type="text"
+              placeholder="Enter film"
+              autofocus
+              required
+              autocomplete="off"
+              class="search-button"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="example">i.e The Wizard of Oz</div>
+        </div>
+        <div class="insert-quote-hidden" id="film-quote-actual"></div>
       </main>
       <footer>
         This AI project is coded by

@@ -3,6 +3,7 @@ function displayFilmQuote(response) {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
+    cursor: "",
   });
 }
 
@@ -16,6 +17,9 @@ function generateFilmQuote(event) {
   let prompt = `User instructions: Generate a film quote from ${instructions.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let quoteHidden = document.querySelector("#film-quote-actual");
+  quoteHidden.classList.remove("hidden");
+  quoteHidden.innerHTML = "💬 Generating...";
   axios.get(apiUrl).then(displayFilmQuote);
 }
 
