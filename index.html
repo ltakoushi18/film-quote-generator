@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
@@ -18,7 +19,7 @@
         <h1>AI Film Quote Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="film-quote-form">
           <input
             type="text"
             placeholder="Enter film choice"
@@ -29,11 +30,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="insert-quote">
-          Film quote goes here
-          <br />
-          and here
-        </div>
+        <div class="insert-quote" id="film-quote-actual"></div>
       </main>
       <footer>
         This AI project is coded by
